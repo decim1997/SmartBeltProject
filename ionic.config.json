@@ -1,0 +1,7 @@
+{
+  "name": "smartbelt",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

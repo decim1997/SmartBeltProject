@@ -1,0 +1,18 @@
+ion-content{
+    --background: #fff url('../../assets/pictures/athlete.jpg') no-repeat center center / cover;
+      background-size: cover;
+}
+
+ion-card-title
+{
+  color:darkgrey;   
+   margin-left: 30px;
+   margin-bottom: 120px;
+}
+
+ion-card.card
+{
+ box-shadow: none;
+ background: rgba(0,0,0, 0.5);
+ border-radius: 5px;
+}

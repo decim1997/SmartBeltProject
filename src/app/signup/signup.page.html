@@ -1,0 +1,48 @@
+
+<ion-content>
+
+    <ion-card class="card">
+
+        <ion-card-header>
+          <ion-card-title>Login Form</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+
+
+            <form (ngSubmit)="CreateCount()">
+
+              <ion-item>
+                <ion-input type="text" placeholder="Enter Email" name="email"></ion-input>
+              </ion-item>
+
+                <ion-item>
+                    <ion-input type="text" placeholder="Enter pseudo" name="pseudo" [(ngModel)]="user.pseudo" ></ion-input>
+                  </ion-item> 
+                
+                  <ion-item>
+                    <ion-input type="password" placeholder="Enter Password" name="password" [(ngModel)]="user.password"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label>Type</ion-label>
+                      <ion-select placeholder="Select One">
+                        <ion-select-option value="l">Lombalgie</ion-select-option>
+                        <ion-select-option value="lg">lumbago</ion-select-option>
+                        <ion-select-option value="lg">sciatique</ion-select-option>
+                        <ion-select-option value="lg">l’arthrose</ion-select-option>
+                      </ion-select>
+                    </ion-item>
+                
+                  <ion-button type="submit" expand="full">SignUp
+                      <ion-icon name="arrow-round-forward"></ion-icon>
+                  </ion-button>
+            </form>
+
+            <a href="#">Forgot your passwoord??</a>
+            <br/>
+            <a href="/signup">D'ont have account??</a>
+        </ion-card-content>
+      </ion-card>
+      
+</ion-content>

@@ -1,0 +1,49 @@
+
+
+<ion-content>
+
+    <ion-card class="card">
+        <ion-fab vertical="top" horizontal="end" slot="fixed">
+            <ion-fab-button>
+              <ion-icon name="add"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list side="start">
+              <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+              <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+        <ion-card-header>
+           
+          <ion-card-title>Login Form</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content >
+
+         
+            <form (ngSubmit)="seConnecter()">
+                <ion-item >
+                    <ion-input type="text" placeholder="Login" name="pseudo" [(ngModel)]="user.pseudo" class="color"></ion-input>
+                  </ion-item>
+                
+                  <ion-item  >
+                    <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="user.password" class="color"></ion-input>
+                  </ion-item>
+                
+                  <ion-button type="submit" expand="full">Signin
+                      <ion-icon name="log-in"></ion-icon>
+                  </ion-button>
+            </form>
+
+            <a href="#">Forgot your passwoord</a>
+            <br/>
+            <a href="/signup">D'ont have account??</a>
+        </ion-card-content>
+      </ion-card>
+      
+  
+
+</ion-content>
+
+
